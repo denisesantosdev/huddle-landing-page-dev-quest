@@ -48,6 +48,8 @@ body {
   background-image: url(images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  display: grid;
+  place-items: center;
 }
 
 .container {
@@ -78,7 +80,7 @@ body {
 }
 
 header {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -87,9 +89,16 @@ header {
 
 .hero {
   display: grid;
-  grid-gap: 4rem;
+  place-items: center;
+  grid-gap: 3rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
@@ -136,11 +145,10 @@ footer {
 }
 
 /* DESKTOP */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   body {
     background-image: url(images/bg-desktop.svg);
     background-size: cover;
-    display: grid;
   }
 
   header {
@@ -153,6 +161,10 @@ footer {
     place-items: center;
     text-align: left;
     margin-bottom: 0;
+  }
+
+  .hero img {
+    max-width: 100%;
   }
 
   footer {
